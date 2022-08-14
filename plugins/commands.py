@@ -42,10 +42,10 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ ༒Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ༒ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ ༒Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs༒ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('😕 ❤❤❤', callback_data='guid'),
-            InlineKeyboardButton('😒 222', url='https://t.me/hddubhub4u')
+            InlineKeyboardButton('📓 ᴜsᴇʀ ɢᴜɪᴅᴇ 👤', url='https://telegra.ph/%CA%9C%E1%B4%8F%E1%B4%A1-%E1%B4%9B%E1%B4%8F-%E1%B4%9Cs%E1%B4%87-06-27),
+            InlineKeyboardButton('🤖 ᴏᴛʜᴇʀ ʙᴏᴛs 🤖', url='https://t.me/robo_glitch')
             ],[
             InlineKeyboardButton('🔍 ༒Sᴇᴀʀᴄʜ༒', switch_inline_query_current_chat=''),
             InlineKeyboardButton('📢 ༒Uᴘᴅᴀᴛᴇs༒', url='https://t.me/hddubhub4u')
@@ -93,14 +93,14 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ༒Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs༒ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📢 111', url='https://t.me/hddubhub4u'), 
-            InlineKeyboardButton('📢 222', url='https://t.me/hddubhub4u')
+            InlineKeyboardButton('📓 ᴜsᴇʀ ɢᴜɪᴅᴇ 👤', url='https://telegra.ph/%CA%9C%E1%B4%8F%E1%B4%A1-%E1%B4%9B%E1%B4%8F-%E1%B4%9Cs%E1%B4%87-06-27),
+            InlineKeyboardButton('🤖 ᴏᴛʜᴇʀ ʙᴏᴛs 🤖', url='https://t.me/robo_glitch')
             ],[
             InlineKeyboardButton('🔍 ༒Sᴇᴀʀᴄʜ༒', switch_inline_query_current_chat=''),
             InlineKeyboardButton('📢 ༒Uᴘᴅᴀᴛᴇs༒', url='https://t.me/hddubhub4u')
             ],[
             InlineKeyboardButton('📮 ༒Hᴇʟᴘ༒', callback_data='help'),
-            InlineKeyboardButton('👿 ༒Aʙᴏᴜᴛ༒', callback_data='about')
+            InlineKeyboardButton('😈 ༒Aʙᴏᴜᴛ༒', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_video(
