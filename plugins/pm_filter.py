@@ -404,13 +404,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
-        ], [
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
-        ], [
-            InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('➕ ༒Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs༒ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            ],[
+            InlineKeyboardButton('📓 ᴜsᴇʀ ɢᴜɪᴅᴇ 👤', url='https://telegra.ph/%CA%9C%E1%B4%8F%E1%B4%A1-%E1%B4%9B%E1%B4%8F-%E1%B4%9Cs%E1%B4%87-06-27),
+            InlineKeyboardButton('🤖 ᴏᴛʜᴇʀ ʙᴏᴛs 🤖', url='https://t.me/robo_glitch')
+            ],[
+            InlineKeyboardButton('🔍 ༒Sᴇᴀʀᴄʜ༒', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('📢 ༒Uᴘᴅᴀᴛᴇs༒', url='https://t.me/hddubhub4u')
+            ],[
+            InlineKeyboardButton('📮 ༒Hᴇʟᴘ༒', callback_data='help'),
+            InlineKeyboardButton('😈 ༒Aʙᴏᴜᴛ༒', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -421,14 +424,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer('Piracy Is Crime')
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('✧Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ✧', callback_data='manuelfilter'),
+            InlineKeyboardButton('✧Aᴜᴛᴏ Fɪʟᴛᴇʀ✧', callback_data='autofilter')
         ], [
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('✧Cᴏɴɴᴇᴄᴛɪᴏɴ✧', callback_data='coct'),
+            InlineKeyboardButton('✧Exᴛʀᴀ Mᴏᴅs✧', callback_data='extra')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔮 Status', callback_data='stats')
+            InlineKeyboardButton('✧ʀᴇɴᴀᴍᴇ ʙᴏᴛ✧ ', url ="https://t.me/ProRenameBot'),
+            InlineKeyboardButton('✧ᴀᴜᴛᴏ ᴄᴀᴘᴛɪᴏɴ ʙᴏᴛ✧', url="https://t.me/GlitchAutoCaptionBot')
+        ], [
+            InlineKeyboardButton('🏠 ✧Hᴏᴍᴇ✧', callback_data='start'),
+            InlineKeyboardButton('🔮 ✧Sᴛᴀᴛᴜs✧', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -438,11 +444,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria'),
-            InlineKeyboardButton('♥️ Source', callback_data='source')
+            InlineKeyboardButton('📢 ✧Sᴜᴘᴘᴏʀᴛ✧', url='https://t.me/dubbedweb'),
+            InlineKeyboardButton('♥️ ✧Sᴏᴜʀᴄᴇ✧', callback_data='source')
         ], [
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔐 Close', callback_data='close_data')
+            InlineKeyboardButton('🏠 ✧Hᴏᴍᴇ✧', callback_data='start'),
+            InlineKeyboardButton('🔐 ✧Cʟᴏsᴇ✧', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
