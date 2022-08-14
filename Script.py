@@ -1,8 +1,8 @@
 class script(object):
     START_TXT = """Hᴇʏ Hᴏᴛᴛɪᴇ 🔥 {}
-Mʏ Nᴀᴍᴇ ɪs <a href=https://t.me/{}>{}</a> ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴀɴᴅ sᴇʀɪᴇs Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ As Aᴅᴍɪɴ Tʜᴀᴛs Aʟʟ I Wɪʟʟ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs Tʜᴇʀᴇ⚡ ©️ MᴀɪɴᴛᴀɪɴᴇD Bʏ : <a href=https://t.me/robo_glitch>༒Gʟɪᴛᴄʜ༒</a>"""
+Mʏ Nᴀᴍᴇ ɪs <a href=https://t.me/{}>{}</a> ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴀɴᴅ sᴇʀɪᴇs Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ As Aᴅᴍɪɴ Tʜᴀᴛs Aʟʟ I Wɪʟʟ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs Tʜᴇʀᴇ⚡"""
     HELP_TXT = """Oʏᴇ Dᴜᴅᴇ ⚡ {}
-➣ Hᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ᴏғ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs As ᴍʏ ᴍᴀsᴛᴇʀ <a href=https://t.me/robo_glitch>༒Gʟɪᴛᴄʜ༒</a> ᴅᴇsɪɢɴᴇᴅ ᴍᴇ ⚡ ©️ Sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/dubbedweb>༒Gʀᴏᴜᴘ༒</a>"""
+➣ Hᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ᴏғ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs 🛠\nAs ᴍʏ ᴍᴀsᴛᴇʀ <a href=https://t.me/robo_glitch>✧Gʟɪᴛᴄʜ✧</a> ᴅᴇsɪɢɴᴇᴅ ᴍᴇ ⚡\nSᴜᴘᴘᴏʀᴛ : <a href=https://t.me/dubbedweb>༒Gʀᴏᴜᴘ༒</a>"""
     ABOUT_TXT = """✯ Mʏ Nᴀᴍᴇ ɪs: {}
 ✯ Cʀᴇᴀᴛᴏʀ ♕: <a href=https://t.me/robo_glitch>༒Tᴇᴀᴍ Gʟɪᴛᴄʜ༒</a>
 ✯ Lᴀɴɢᴜᴀɢᴇ  ✧: Pʏᴛʜᴏɴ 4
@@ -11,11 +11,11 @@ Mʏ Nᴀᴍᴇ ɪs <a href=https://t.me/{}>{}</a> ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅ�
 ✯ Lɪʙʀᴀʀʏ     ✧: Pʏʀᴏɢʀᴀᴍ
 ✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs ✧: ᴠ1.0.9[ BETA ]"""
     SOURCE_TXT = """<b>📌 ༒NOTE༒:</b>
- ➣ ༒ Tʜɪs Is Mʏ Pʀᴏ PʀᴏJᴇᴄᴛ ༒
- ➣ Sᴜᴘᴘᴏʀᴛ :  <a href=https://t.me/dubbedweb>༒Gʀᴏᴜᴘ༒</a>  
+ ➣ ✧✧✧ Tʜɪs Is Mʏ Pʀᴏ PʀᴏJᴇᴄᴛ ✧✧✧
+ ➣ **Sᴜᴘᴘᴏʀᴛ** : <a href=https://t.me/hddubhub4uhelp>༒Gʀᴏᴜᴘ༒</a>  
 
 <b>🛠  ♕ DEVS ♕:</b>
-😈<a href=https://t.me/robo_glitch>༒Tᴇᴀᴍ Gʟɪᴛᴄʜ༒</a>"""
+😈 <a href=https://t.me/robo_glitch>༒Tᴇᴀᴍ Gʟɪᴛᴄʜ༒</a>"""
     MANUELFILTER_TXT = """Help: <b>🖇 ༒Filters༒ 🖇</b>
 
 ➣ Fɪʟᴛᴇʀ ɪs ᴛʜᴇ ғᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜsᴇʀs ᴄᴀɴ sᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇs ғᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ I ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴀ ᴋᴇʏᴡᴏʀᴅ ɪs ғᴏᴜɴᴅ ᴛʜᴇ ᴍᴇssᴀɢᴇ ⚡
