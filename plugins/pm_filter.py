@@ -431,7 +431,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✧Exᴛʀᴀ Mᴏᴅs✧', callback_data='extra')
         ], [
             InlineKeyboardButton('✧ʀᴇɴᴀᴍᴇ ʙᴏᴛ✧ ', url ='https://t.me/ProRenameBot'),
-            InlineKeyboardButton('✧ᴀᴜᴛᴏ ᴄᴀᴘᴛɪᴏɴ ʙᴏᴛ✧', url="https://t.me/GlitchAutoCaptionBot')
+            InlineKeyboardButton('✧ᴀᴜᴛᴏ ᴄᴀᴘᴛɪᴏɴ ʙᴏᴛ✧', url='https://t.me/GlitchAutoCaptionBot')
         ], [
             InlineKeyboardButton('🏠 ✧Hᴏᴍᴇ✧', callback_data='start'),
             InlineKeyboardButton('🔮 ✧Sᴛᴀᴛᴜs✧', callback_data='stats')
