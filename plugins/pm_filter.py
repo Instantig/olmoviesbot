@@ -29,29 +29,7 @@ logger.setLevel(logging.ERROR)
 BUTTONS = {}
 SPELL_CHECK = {}
 FILTER_MODE = {}
-
-@Client.on_message(filters.command('autofilter'))
-async def fil_mod(client, message): 
-      mode_on = ["yes", "on", "true"]
-      mode_of = ["no", "off", "false"]
-
-      try: 
-         args = message.text.split(None, 1)[1].lower() 
-      except: 
-         return await message.reply("**❌ ᴡʀᴏɴɢ ᴄᴏᴍᴍᴀɴᴅ ᴜsᴇ ᴀᴜᴛᴏꜰɪʟᴛᴇƦ ᴏɴ ᴏꜰꜰ 💡**")
-      
-      m = await message.reply("**ᴘƦᴏssᴇsɪɴɢ....⏳**")
-
-      if args in mode_on:
-          FILTER_MODE[str(message.chat.id)] = "True" 
-          await m.edit("**ᴀᴜᴛᴏꜰɪʟᴛᴇƦ ᴍᴏᴅᴇ ᴇɴᴀʙʟᴇᴅ ✅**")
-      
-      elif args in mode_of:
-          FILTER_MODE[str(message.chat.id)] = "False"
-          await m.edit("**ᴀᴜᴛᴏꜰɪʟᴛᴇƦ ᴍᴏᴅᴇ ᴅɪsᴀʙʟᴇᴅ ❌**")
-      else:
-          await m.edit("Yes :- /autofilter on No /autofilter off")
-
+    
 @Client.on_message(filters.text & filters.incoming)
 async def give_filter(client,message):
     group_id = message.chat.id
