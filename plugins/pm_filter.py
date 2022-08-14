@@ -41,14 +41,14 @@ async def give_filter(client, message):
 async def next_page(bot, query):
     ident, req, key, offset = query.data.split("_")
     if int(req) not in [query.from_user.id, 0]:
-        return await query.answer("oKda", show_alert=True)
+        return await query.answer("ᴅᴏɴ'ᴛ ᴛᴏᴜᴄʜ ᴏᴛʜᴇʀs ᴘʀᴏᴘᴇʀᴛʏ 😒", show_alert=True)
     try:
         offset = int(offset)
     except:
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("You are using one of my old messages, please send the request again.", show_alert=True)
+        await query.answer("Uɴᴋɪʟ Yᴏᴜ ᴀʀᴇ ᴜsɪɴɢ ᴏɴᴇ ᴏғ ᴍʏ ᴏʟᴅ ᴍᴇssᴀɢᴇs, ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴛʜᴇ ʀᴇǫᴜᴇsᴛ ᴀɢᴀɪɴ 🙂", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -120,14 +120,14 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("okDa", show_alert=True)
+        return await query.answer("Oᴏᴏᴘs 😁", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
         return await query.answer("You are clicking on an old button which is expired.", show_alert=True)
     movie = movies[(int(movie_))]
-    await query.answer('Checking for Movie in database...')
+    await query.answer('Sᴇᴀʀᴄʜɪɴɢ...sɪʀ 🔍...')
     k = await manual_filters(bot, query.message, text=movie)
     if k == False:
         files, offset, total_results = await get_search_results(movie, offset=0, filter=True)
@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase')
+            k = await query.message.edit('💔 ᴛʜɪs ᴍᴏᴠɪᴇ ɴᴏᴛ ꜰᴏᴜɴᴅ ɪɴ ᴅᴀᴛᴀʙᴀsᴇ\nᴡʀɪᴛᴇ✍ #ʀᴇǫᴜᴇsᴛ ᴍᴏᴠɪᴇ/sᴇʀɪᴇs ɴᴀᴍᴇ ɪ ᴡɪʟʟ ʀᴇᴘᴏʀᴛ ᴛʜɪs ᴛᴏ ᴀᴅᴍɪɴs 🔱')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -176,7 +176,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
             await del_all(query.message, grp_id, title)
         else:
-            await query.answer("You need to be Group Owner or an Auth User to do that!", show_alert=True)
+            await query.answer("Yᴏᴜ ɴᴇᴇᴅ ᴛᴏ ʙᴇ Gʀᴏᴜᴘ Oᴡɴᴇʀ ᴏʀ ᴀɴ Aᴜᴛʜ Usᴇʀ ᴛᴏ ᴅᴏ ᴛʜᴀᴛ 🤬 ", show_alert=True)
     elif query.data == "delallcancel":
         userid = query.from_user.id
         chat_type = query.message.chat.type
@@ -195,7 +195,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     pass
             else:
-                await query.answer("That's not for you!!", show_alert=True)
+                await query.answer("😕 Iᴅɪᴏᴛ Tʜᴀᴛ's ɴᴏᴛ ғᴏʀ ʏᴏᴜ!!", show_alert=True)
     elif "groupcb" in query.data:
         await query.answer()
 
@@ -364,7 +364,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('Check PM, I have sent files in pm', show_alert=True)
+                await query.answer('Gᴏ ᴀɴᴅ Cʜᴇᴄᴋ ᴘᴍ,I ʜᴀᴠᴇ sᴇɴᴛ ғɪʟᴇs ɪɴ ᴘᴍ 🤩', show_alert=True)
         except UserIsBlocked:
             await query.answer('Unblock the bot mahn !', show_alert=True)
         except PeerIdInvalid:
@@ -373,7 +373,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("I Like Your Smartness, But Don't Be Oversmart 😒", show_alert=True)
+            await query.answer("I Lɪᴋᴇ Yᴏᴜʀ Sᴍᴀʀᴛɴᴇss,Bᴜᴛ Dᴏɴ'ᴛ Bᴇ Oᴠᴇʀsᴍᴀʀᴛ 😒", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
@@ -409,11 +409,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('📓 ᴜsᴇʀ ɢᴜɪᴅᴇ 👤', url='https://telegra.ph/%CA%9C%E1%B4%8F%E1%B4%A1-%E1%B4%9B%E1%B4%8F-%E1%B4%9Cs%E1%B4%87-06-27),
             InlineKeyboardButton('🤖 ᴏᴛʜᴇʀ ʙᴏᴛs 🤖', url='https://t.me/robo_glitch')
             ],[
-            InlineKeyboardButton('🔍 ༒Sᴇᴀʀᴄʜ༒', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('📢 ༒Uᴘᴅᴀᴛᴇs༒', url='https://t.me/hddubhub4u')
+            InlineKeyboardButton('🔍 ✧Sᴇᴀʀᴄʜ✧', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('📢 ✧Uᴘᴅᴀᴛᴇs✧', url='https://t.me/hddubhub4u')
             ],[
-            InlineKeyboardButton('📮 ༒Hᴇʟᴘ༒', callback_data='help'),
-            InlineKeyboardButton('😈 ༒Aʙᴏᴜᴛ༒', callback_data='about')
+            InlineKeyboardButton('📮 ✧Hᴇʟᴘ✧', callback_data='help'),
+            InlineKeyboardButton('😈 ✧Aʙᴏᴜᴛ✧', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -446,6 +446,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('📢 ✧Sᴜᴘᴘᴏʀᴛ✧', url='https://t.me/dubbedweb'),
             InlineKeyboardButton('♥️ ✧Sᴏᴜʀᴄᴇ✧', callback_data='source')
+        ], [
+            InlineKeyboardButton('✧Iɴғᴏ Bᴏᴛ✧', url='https://t.me/IDinformatinBot'),
+            InlineKeyboardButton('✧ꜰɪʟᴇ sᴛᴏʀᴇ ʙᴏᴛ✧', url='https://t.me/CopyrightFreeBot')
         ], [
             InlineKeyboardButton('🏠 ✧Hᴏᴍᴇ✧', callback_data='start'),
             InlineKeyboardButton('🔐 ✧Cʟᴏsᴇ✧', callback_data='close_data')
@@ -531,7 +534,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "stats":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
-            InlineKeyboardButton('♻️', callback_data='rfrsh')
+            InlineKeyboardButton('♻️ ʀᴇꜰʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -547,10 +550,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     elif query.data == "rfrsh":
-        await query.answer("Fetching MongoDb DataBase")
+        await query.answer("ʀᴇꜰʀᴇsʜɪɴɢ ᴅᴀᴛᴀʙᴀsᴇ...⏳")
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help'),
-            InlineKeyboardButton('♻️', callback_data='rfrsh')
+            InlineKeyboardButton('♻️ ʀᴇꜰʀᴇsʜ', callback_data='rfrsh')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         total = await Media.count_documents()
@@ -745,7 +748,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I couldn't find any movie in that name.")
+        k = await msg.reply("💔 ɪ ᴄᴏᴜʟᴅɴ'ᴛ ꜰɪɴᴅ ᴀɴʏ ᴍᴏᴠɪᴇ ɪɴ ᴛʜᴀᴛ ɴᴀᴍᴇ ᴘʟᴇᴀsᴇ ᴄʜᴇᴄᴋ ʏᴏᴜʀ Sᴘᴇʟʟɪɴɢ ✔ 🙂\n➤ ɴᴇᴇᴅ ʜᴇʟᴘ** 💌: <a href=https://t.me/GlitchAssistantBot>**[ᴡʀɪᴛᴇ ʜᴇʀᴇ]**</a>")
         await asyncio.sleep(8)
         await k.delete()
         return
