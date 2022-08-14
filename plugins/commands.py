@@ -44,7 +44,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('➕ ༒Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ༒ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('😕 ❤❤❤', url='https://t.me/hddubhub4u'), 
+            InlineKeyboardButton('😕 ❤❤❤', callback_data='guid'),
             InlineKeyboardButton('😒 222', url='https://t.me/hddubhub4u')
             ],[
             InlineKeyboardButton('🔍 ༒Sᴇᴀʀᴄʜ༒', switch_inline_query_current_chat=''),
