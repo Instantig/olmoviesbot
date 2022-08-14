@@ -22,7 +22,7 @@ async def save_group(bot, message):
         if message.chat.id in temp.BANNED_CHATS:
             # Inspired from a boat of a banana tree
             buttons = [[
-                InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/dubbedweb')
+                InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/hddubhub4uhelp')
             ]]
             reply_markup=InlineKeyboardMarkup(buttons)
             k = await message.reply(
@@ -38,11 +38,11 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('📮 ✧Hᴇʟᴘ✧', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 ✧Uᴘᴅᴀᴛᴇs✧', url='https://t.me/hddubhub4u')
+            InlineKeyboardButton('📢 ✧Uᴘᴅᴀᴛᴇs✧', url='https://t.me/robo_glitch')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>Tʜᴀɴᴋ ʏᴏᴜ Fᴏʀ Aᴅᴅɪɴɢ Mᴇ Iɴ {message.chat.title} ❣️\n\nIғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs & ᴅᴏᴜʙᴛs ᴀʙᴏᴜᴛ ᴜsɪɴɢ ᴍᴇ ᴄᴏɴᴛᴀᴄᴛ sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/dubbedweb>༒Oғғɪᴄɪᴀʟ Gʀᴏᴜᴘ༒</a>💌</b>",
+            text=f"<b>❤ Tʜᴀɴᴋ ʏᴏᴜ Fᴏʀ Aᴅᴅɪɴɢ Mᴇ Iɴ {message.chat.title} ❣️\n\nIғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs & ᴅᴏᴜʙᴛs ᴀʙᴏᴜᴛ ᴜsɪɴɢ ᴍᴇ ᴄᴏɴᴛᴀᴄᴛ sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/hddubhub4uhelp>༒Oғғɪᴄɪᴀʟ Gʀᴏᴜᴘ༒</a>💌</b>""",
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
