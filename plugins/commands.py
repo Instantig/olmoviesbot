@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('📢 ༒Uᴘᴅᴀᴛᴇs༒', url='https://t.me/hddubhub4u')
+                InlineKeyboardButton('📢 ༒Uᴘᴅᴀᴛᴇs༒', url='https://t.me/robo_glitch')
             ],
             [
-                InlineKeyboardButton('📮 ༒Hᴇʟᴘ༒', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('📮 ༒Hᴇʟᴘ༒', url=f"https://t.me/the_glitchs"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -91,10 +91,10 @@ async def start(client, message):
         return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ ༒Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs༒ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕༒Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs༒➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📓 ᴜsᴇʀ ɢᴜɪᴅᴇ 👤', url='https://telegra.ph/%CA%9C%E1%B4%8F%E1%B4%A1-%E1%B4%9B%E1%B4%8F-%E1%B4%9Cs%E1%B4%87-06-27'),
-            InlineKeyboardButton('🤖 ᴏᴛʜᴇʀ ʙᴏᴛs 🤖', url='https://t.me/robo_glitch')
+            InlineKeyboardButton('📓✧ᴜsᴇʀ ɢᴜɪᴅᴇ✧👤', url='https://telegra.ph/%CA%9C%E1%B4%8F%E1%B4%A1-%E1%B4%9B%E1%B4%8F-%E1%B4%9Cs%E1%B4%87-06-27'),
+            InlineKeyboardButton('🤖✧ᴏᴛʜᴇʀ ʙᴏᴛs✧🤖', url='https://t.me/robo_glitch')
             ],[
             InlineKeyboardButton('🔍 ༒Sᴇᴀʀᴄʜ༒', switch_inline_query_current_chat=''),
             InlineKeyboardButton('📢 ༒Uᴘᴅᴀᴛᴇs༒', url='https://t.me/hddubhub4u')
@@ -103,8 +103,8 @@ async def start(client, message):
             InlineKeyboardButton('😈 ༒Aʙᴏᴜᴛ༒', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_video(
-            video=random.choice(PICS),
+        await message.reply_photo(
+            photo=random.choice(PICS),
             caption=script.START_TXT.format(message.from_user.mention, temp.U_NAME, temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
