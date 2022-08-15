@@ -88,7 +88,7 @@ async def next_page(bot, query):
             InlineKeyboardButton('❓Hᴏᴡ', url='https://telegra.ph/H%E1%B4%8F%E1%B4%A1-T%E1%B4%8F-07-13'),
             InlineKeyboardButton('🆘Hᴇʟᴘ', url='https://t.me/GlitchAssistantBot'),
             InlineKeyboardButton('🤖ʙᴏᴛs', url='https://t.me/robo_glitch'),
-            InlineKeyboardButton('🔗ᴄʜɴʟ', url='https://t.me/https://t.me/futurebackups/603'),
+            InlineKeyboardButton('🔗ᴄʜɴʟ', url='https://t.me/futurebackups/603'),
         ]
     )
 
