@@ -37,12 +37,12 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('📮 ✧Hᴇʟᴘ✧', url=f"https://t.me/{temp.U_NAME}?start=help"),
+            InlineKeyboardButton('📮 ✧Hᴇʟᴘ✧', url=f"https://t.me/the_glitchs"),
             InlineKeyboardButton('📢 ✧Uᴘᴅᴀᴛᴇs✧', url='https://t.me/robo_glitch')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>❤ Tʜᴀɴᴋ ʏᴏᴜ Fᴏʀ Aᴅᴅɪɴɢ Mᴇ Iɴ {message.chat.title} ❣️\n\nIғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs & ᴅᴏᴜʙᴛs ᴀʙᴏᴜᴛ ᴜsɪɴɢ ᴍᴇ ᴄᴏɴᴛᴀᴄᴛ sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/hddubhub4uhelp>༒Oғғɪᴄɪᴀʟ Gʀᴏᴜᴘ༒</a>💌</b>""",
+            text=f"<b>❤ Tʜᴀɴᴋ ʏᴏᴜ Fᴏʀ Aᴅᴅɪɴɢ Mᴇ Iɴ {message.chat.title} ❣️\n\nIғ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴs & ᴅᴏᴜʙᴛs ᴀʙᴏᴜᴛ ᴜsɪɴɢ ᴍᴇ ᴄᴏɴᴛᴀᴄᴛ sᴜᴘᴘᴏʀᴛ : <a href=https://t.me/hddubhub4uhelp>༒Gʀᴏᴜᴘ༒</a>💌</b>""",
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
@@ -53,7 +53,7 @@ async def save_group(bot, message):
                         await (temp.MELCOW['welcome']).delete()
                     except:
                         pass
-                temp.MELCOW['welcome'] = await message.reply(f"<b>Hᴇʏ 🤘, {u.mention}, ❤Wᴇʟᴄᴏᴍᴇ ᴛᴏ❤ {message.chat.title}</b>")
+                temp.MELCOW['welcome'] = await message.reply(f"<b>Hᴇʏ ʙᴀʙʏ 🤘, {u.mention},\n🐉 Wᴇʟᴄᴏᴍᴇ ᴛᴏ 😈 {message.chat.title}</b>")
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
@@ -67,7 +67,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/dubbedweb')
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/hddubhub4uhelp')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -106,7 +106,7 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/dubbedweb')
+            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ', url=f'https://t.me/hddubhub4uhelp')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
