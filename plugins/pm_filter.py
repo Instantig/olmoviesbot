@@ -64,7 +64,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁{file.file_name}➽[{get_size(file.file_size)}]", callback_data=f'files#{file.file_id}'
+                    text=f"📂[{get_size(file.file_size)}]🎞{file.file_name}", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -87,8 +87,8 @@ async def next_page(bot, query):
         [
             InlineKeyboardButton('❓Hᴏᴡ', url='https://telegra.ph/H%E1%B4%8F%E1%B4%A1-T%E1%B4%8F-07-13'),
             InlineKeyboardButton('🆘Hᴇʟᴘ', url='https://t.me/GlitchAssistantBot'),
-            InlineKeyboardButton('📽Mᴏᴠ', url='https://t.me/+82f6dWJos6AyZDE9'),
-            InlineKeyboardButton('📺Sᴇʀɪ', url='https://t.me/+Kw3uWsmIH1c0MjI9'),
+            InlineKeyboardButton('🤖ʙᴏᴛs', url='https://t.me/robo_glitch'),
+            InlineKeyboardButton('🔗ᴄʜɴʟ', url='https://t.me/https://t.me/futurebackups/603'),
         ]
     )
 
@@ -659,7 +659,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"📁{file.file_name}➽[{get_size(file.file_size)}] ", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📂[{get_size(file.file_size)}]🎞{file.file_name}", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -683,8 +683,8 @@ async def auto_filter(client, msg, spoll=False):
         [
             InlineKeyboardButton('❓Hᴏᴡ', url='https://telegra.ph/H%E1%B4%8F%E1%B4%A1-T%E1%B4%8F-07-13'),
             InlineKeyboardButton('🆘Hᴇʟᴘ', url='https://t.me/GlitchAssistantBot'),
-            InlineKeyboardButton('📽Mᴏᴠ', url='https://t.me/+82f6dWJos6AyZDE9'),
-            InlineKeyboardButton('📺Sᴇʀɪ', url='https://t.me/+Kw3uWsmIH1c0MjI9'),
+            InlineKeyboardButton('🤖ʙᴏᴛs', url='https://t.me/robo_glitch'),
+            InlineKeyboardButton('🔗ᴄʜɴʟ', url='https://t.me/futurebackups/603'),
         ]
     )
         
