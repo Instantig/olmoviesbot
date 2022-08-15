@@ -5,14 +5,14 @@ Mʏ Nᴀᴍᴇ ɪs <a href=https://t.me/{}>{}</a> ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅ�
 ➣ Hᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ᴏғ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs 🛠\nAs ᴍʏ ᴍᴀsᴛᴇʀ <a href=https://t.me/robo_glitch>✧Gʟɪᴛᴄʜ✧</a> ᴅᴇsɪɢɴᴇᴅ ᴍᴇ ⚡\nSᴜᴘᴘᴏʀᴛ : <a href=https://t.me/dubbedweb>༒Gʀᴏᴜᴘ༒</a>"""
     ABOUT_TXT = """✯ Mʏ Nᴀᴍᴇ ɪs: {}
 ✯ Cʀᴇᴀᴛᴏʀ ♕: <a href=https://t.me/robo_glitch>༒Tᴇᴀᴍ Gʟɪᴛᴄʜ༒</a>
-✯ Lᴀɴɢᴜᴀɢᴇ  ✧: Pʏᴛʜᴏɴ 4
+✯ Lᴀɴɢᴜᴀɢᴇ  ✧: Pʏᴛʜᴏɴ 5
 ✯ Bᴏᴛ Sᴇʀᴠᴇʀ ✧: Aᴅᴠᴀɴᴄᴇᴅ
 ✯ Dᴀᴛᴀ Bᴀsᴇ  ✧: Uʟᴛʀᴀ Pʀᴏ
-✯ Lɪʙʀᴀʀʏ     ✧: Pʏʀᴏɢʀᴀᴍ
-✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs ✧: ᴠ1.0.9[ BETA ]"""
+✯ Pʏʀᴏɢʀᴀᴍ    ✧: 4ᴋ sᴜᴘᴘᴏʀᴛ
+✯ Bᴜɪʟᴅ Sᴛᴀᴛᴜs ✧: ᴠ2.1.9[ BETA ]"""
     SOURCE_TXT = """<b>📌 ༒NOTE༒:</b>
- ➣ ✧✧✧ Tʜɪs Is Mʏ Pʀᴏ PʀᴏJᴇᴄᴛ ✧✧✧
- ➣ **Sᴜᴘᴘᴏʀᴛ** : <a href=https://t.me/hddubhub4uhelp>༒Gʀᴏᴜᴘ༒</a>  
+ ➣ ✧ Tʜɪs Is Mʏ Pʀᴏ PʀᴏJᴇᴄᴛ ✧
+ ➣ ✧Sᴜᴘᴘᴏʀᴛ✧ : <a href=https://t.me/hddubhub4uhelp>༒Gʀᴏᴜᴘ༒</a>  
 
 <b>🛠  ♕ DEVS ♕:</b>
 😈 <a href=https://t.me/robo_glitch>༒Tᴇᴀᴍ Gʟɪᴛᴄʜ༒</a>"""
