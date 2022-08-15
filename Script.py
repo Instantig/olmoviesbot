@@ -2,7 +2,7 @@ class script(object):
     START_TXT = """Hᴇʏ Hᴏᴛᴛɪᴇ 🔥 {}
 Mʏ Nᴀᴍᴇ ɪs <a href=https://t.me/{}>{}</a> ɪ ᴄᴀɴ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴀɴᴅ sᴇʀɪᴇs Jᴜsᴛ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ As Aᴅᴍɪɴ Tʜᴀᴛs Aʟʟ I Wɪʟʟ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs Tʜᴇʀᴇ⚡"""
     HELP_TXT = """Oʏᴇ Dᴜᴅᴇ ⚡ {}
-➣ Hᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ᴏғ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs 🛠\nAs ᴍʏ ᴍᴀsᴛᴇʀ <a href=https://t.me/robo_glitch>✧Gʟɪᴛᴄʜ✧</a> ᴅᴇsɪɢɴᴇᴅ ᴍᴇ ⚡\nSᴜᴘᴘᴏʀᴛ : <a href=https://t.me/dubbedweb>༒Gʀᴏᴜᴘ༒</a>"""
+➣ Hᴇʀᴇ ɪs ᴛʜᴇ ʜᴇʟᴘ ᴏғ ᴍʏ ᴄᴏᴍᴍᴀɴᴅs 🛠 As ᴍʏ ᴍᴀsᴛᴇʀ <a href=https://t.me/robo_glitch>\n✧Gʟɪᴛᴄʜ✧</a> ᴅᴇsɪɢɴᴇᴅ ᴍᴇ ⚡\nSᴜᴘᴘᴏʀᴛ : <a href=https://t.me/dubbedweb>༒Gʀᴏᴜᴘ༒</a>"""
     ABOUT_TXT = """✯ Mʏ Nᴀᴍᴇ ɪs: {}
 ✯ Cʀᴇᴀᴛᴏʀ ♕: <a href=https://t.me/robo_glitch>༒Tᴇᴀᴍ Gʟɪᴛᴄʜ༒</a>
 ✯ Lᴀɴɢᴜᴀɢᴇ  ✧: Pʏᴛʜᴏɴ 5
