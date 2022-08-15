@@ -64,7 +64,7 @@ async def next_page(bot, query):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'files#{file.file_id}'
+                    text=f"📁{file.file_name}➽[{get_size(file.file_size)}]", callback_data=f'files#{file.file_id}'
                 ),
             ]
             for file in files
@@ -82,6 +82,15 @@ async def next_page(bot, query):
             ]
             for file in files
         ]
+        
+    btn.insert(0,
+        [
+            InlineKeyboardButton('❓Hᴏᴡ', url='https://telegra.ph/H%E1%B4%8F%E1%B4%A1-T%E1%B4%8F-07-13'),
+            InlineKeyboardButton('🆘Hᴇʟᴘ', url='https://t.me/GlitchAssistantBot'),
+            InlineKeyboardButton('📽Mᴏᴠ', url='https://t.me/+82f6dWJos6AyZDE9'),
+            InlineKeyboardButton('📺Sᴇʀɪ', url='https://t.me/+Kw3uWsmIH1c0MjI9'),
+        ]
+    )
 
     if 0 < offset <= 10:
         off_set = 0
@@ -404,7 +413,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ ⏤͟͟͞͞Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs⏤͟͟͞͞ ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕⏤͟͟͞͞Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs⏤͟͟͞͞➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('📓✧ᴜsᴇʀ ɢᴜɪᴅᴇ✧👤', url='https://telegra.ph/%CA%9C%E1%B4%8F%E1%B4%A1-%E1%B4%9B%E1%B4%8F-%E1%B4%9Cs%E1%B4%87-06-27'),
             InlineKeyboardButton('🤖✧ᴏᴛʜᴇʀ ʙᴏᴛs✧🤖', url='https://t.me/robo_glitch')
@@ -650,7 +659,7 @@ async def auto_filter(client, msg, spoll=False):
         btn = [
             [
                 InlineKeyboardButton(
-                    text=f"[{get_size(file.file_size)}] {file.file_name}", callback_data=f'{pre}#{file.file_id}'
+                    text=f"📁{file.file_name}➽[{get_size(file.file_size)}] ", callback_data=f'{pre}#{file.file_id}'
                 ),
             ]
             for file in files
@@ -669,7 +678,16 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
-
+        
+    btn.insert(0,
+        [
+            InlineKeyboardButton('❓Hᴏᴡ', url='https://telegra.ph/H%E1%B4%8F%E1%B4%A1-T%E1%B4%8F-07-13'),
+            InlineKeyboardButton('🆘Hᴇʟᴘ', url='https://t.me/GlitchAssistantBot'),
+            InlineKeyboardButton('📽Mᴏᴠ', url='https://t.me/+82f6dWJos6AyZDE9'),
+            InlineKeyboardButton('📺Sᴇʀɪ', url='https://t.me/+Kw3uWsmIH1c0MjI9'),
+        ]
+    )
+        
     if offset != "":
         key = f"{message.chat.id}-{message.id}"
         BUTTONS[key] = search
