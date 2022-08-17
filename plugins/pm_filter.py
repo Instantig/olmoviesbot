@@ -413,10 +413,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕⏤͟͟͞͞Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs⏤͟͟͞͞➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('✚༒ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs༒➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('📓✧ᴜsᴇʀ ɢᴜɪᴅᴇ✧👤', url='https://telegra.ph/%CA%9C%E1%B4%8F%E1%B4%A1-%E1%B4%9B%E1%B4%8F-%E1%B4%9Cs%E1%B4%87-06-27'),
-            InlineKeyboardButton('🤖✧ᴏᴛʜᴇʀ ʙᴏᴛs✧🤖', url='https://t.me/robo_glitch')
+            InlineKeyboardButton('📓 ᴜsᴇʀ ɢᴜɪᴅᴇ 👤', url='https://telegra.ph/%CA%9C%E1%B4%8F%E1%B4%A1-%E1%B4%9B%E1%B4%8F-%E1%B4%9Cs%E1%B4%87-06-27'),
+            InlineKeyboardButton('🤖 ᴏᴛʜᴇʀ ʙᴏᴛs 🤖', url='https://t.me/robo_glitch')
             ],[
             InlineKeyboardButton('🔍 ✧Sᴇᴀʀᴄʜ✧', switch_inline_query_current_chat=''),
             InlineKeyboardButton('📢 ✧Uᴘᴅᴀᴛᴇs✧', url='https://t.me/hddubhub4u')
