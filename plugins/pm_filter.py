@@ -848,7 +848,7 @@ async def auto_filter(client, msg, spoll=False):
 
     if imdb and imdb.get('poster'):
         try:
-            hehe = await message.reply_sticker(sticker="CAACAgUAAxkBAAIFDGMRvnaylYrJ1fsJHRmHB8btn4oQAAKTBgACXQG5Vc7UMP97WeQPHgQ", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
+            hehe = await message.reply_photo(photo="https://telegra.ph/file/87bb2f28fadbb3c3c630b.jpg", caption=cap, reply_markup=InlineKeyboardMarkup(btn))
             await asyncio.sleep(600)
             await hehe.delete()            
         except (MediaEmpty, PhotoInvalidDimensions, WebpageMediaEmpty):
